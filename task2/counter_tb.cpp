@@ -38,15 +38,16 @@ int main(int argc, char **argv, char **env){
         // send count value to vbuddy
         
         //counting in hexadecimal numbers
-        
+        /*
         vbdHex(4, (int(top->count) >> 16) & 0xF); 
         vbdHex(3, (int(top->count) >> 8) & 0xF);
         vbdHex(2, (int(top->count) >> 4) & 0xF);
         vbdHex(1, int(top->count) & 0xF);  
+        */
         
         // Step 3:
         // counting as a line
-        //vbdPlot(int(top->count), 0, 255);       
+        vbdPlot(int(top->count), 0, 255);       
         vbdCycle(i + 1);
         // end of Vbuddy output section
 
