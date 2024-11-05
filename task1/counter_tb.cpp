@@ -33,7 +33,7 @@ int main(int argc, char **argv, char **env){
         //Challenge
         // stop counting for 3 cycles at when count reaches 9
         if(top->count == 10){
-            for(int j = 0; j < 2; j++){
+            for(int j = 0; j < 3; j++){
                 i++;
             }
         }

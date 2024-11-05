@@ -26,7 +26,7 @@ int main(int argc, char **argv, char **env){
     top->en = 0;
 
     //run simulation for many clock 
-    for(i = 0; i < 300; i++){
+    for(i = 0; i < 10000; i++){
 
         //dump variables into VCD file and toggle clock
         for(clk = 0; clk < 2; clk++){

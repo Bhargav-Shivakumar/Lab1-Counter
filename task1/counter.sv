@@ -11,7 +11,7 @@ module counter #(
 //always_ff @ (posedge clk)
 //Challenge
 //adding asynchrous reset
-always_ff @ (posedge clk, posedge reset) //at reset positive edge execute code below
+always_ff @ (posedge clk, posedge rst) //at reset positive edge execute code below
     if (rst) count <= {WIDTH{1'b0}}; //if reset is high change all bits to 0
     else count <= count + {{WIDTH-1{1'b0}}, en}; // count takes the value of itself
                                                 // + 1
